@@ -1,0 +1,75 @@
+:root {
+  --Red: #f00000;
+  --Cyan: #45d3d3;
+  --Orange: #fcaf4a;
+  --Blue: #549ef2;
+  --VeryDarkBlue: #4c4e61;
+  --GrayishBlue: #a3a5ae;
+  --VeryLightGray: #fafafa;
+}
+// font-family: 'Poppins', sans-serif;
+html,
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  min-width: 375px;
+  max-width: 1400px;
+}
+header {
+  color: var(--GrayishBlue);
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  place-content: center;
+  margin: 83px 20px 82px;
+  text-align: center;
+  font-size: 0.9em;
+}
+header h2 {
+  font-weight: 200;
+  margin: 0;
+  font-size: 1.5em;
+}
+header h1 {
+  color: var(--VeryDarkBlue);
+  margin: 0;
+  font-size: 1.5em;
+}
+.cards {
+  display: grid;
+  place-content: center;
+}
+div.card span {
+  font-family: "Poppins", sans-serif;
+  color: var(--VeryDarkBlue);
+  font-weight: 400;
+  font-size: 24px;
+}
+.card p {
+  color: var(--GrayishBlue);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85em;
+}
+div.card {
+  border-radius: 10px;
+  box-shadow: 4px 4px 14px #aaa;
+  display: flex;
+  flex-direction: column;
+  height: 193px;
+  padding: 40px;
+  width: 244px;
+}
+.card_supervisor {
+  border-top: 10px solid var(--Cyan);
+}
+.card_teamBuilder {
+  border-top: 10px solid var(--Red);
+}
+.card_karma {
+  border-top: 10px solid var(--Orange);
+}
+.card_calculator {
+  border-top: 10px solid var(--Blue);
+}
