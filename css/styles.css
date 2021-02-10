@@ -15,15 +15,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   min-width: 375px;
-  max-width: 1400px;
 }
 header {
   color: var(--GrayishBlue);
-  display: flex;
-  flex-direction: column;
   font-family: "Poppins", sans-serif;
-  place-content: center;
-  margin: 83px 20px 82px;
+  margin: 60px 20px 55px;
   text-align: center;
   font-size: 0.9em;
 }
@@ -38,8 +34,8 @@ header h1 {
   font-size: 1.5em;
 }
 .cards {
-  display: grid;
-  place-content: center;
+  width: 80vw;
+  margin: 0 auto;
 }
 div.card span {
   font-family: "Poppins", sans-serif;
@@ -55,21 +51,43 @@ div.card span {
 div.card {
   border-radius: 10px;
   box-shadow: 4px 4px 14px #aaa;
-  display: flex;
-  flex-direction: column;
   height: 193px;
-  padding: 40px;
-  width: 244px;
+  padding: 35px;
+  width: 226px;
+  margin-bottom: 26px;
+  position: relative;
 }
 .card_supervisor {
-  border-top: 10px solid var(--Cyan);
+  border-top: 7px solid var(--Cyan);
 }
 .card_teamBuilder {
-  border-top: 10px solid var(--Red);
+  border-top: 7px solid var(--Red);
 }
 .card_karma {
-  border-top: 10px solid var(--Orange);
+  border-top: 7px solid var(--Orange);
 }
 .card_calculator {
-  border-top: 10px solid var(--Blue);
+  border-top: 7px solid var(--Blue);
+}
+svg {
+  position: absolute;
+  right: 50px;
+  bottom: 26px;
+}
+@media screen and (min-width: 700px) {
+  body {
+    max-width: 1440px;
+  }
+  header {
+    width: 500px;
+    margin: 50px auto;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+  }
+  .card_group {
+    padding: 25px;
+  }
 }
