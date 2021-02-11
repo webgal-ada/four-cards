@@ -34,9 +34,13 @@ header h1 {
   font-size: 1.5em;
 }
 .cards {
-  width: 80vw;
   margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
+
 div.card span {
   font-family: "Poppins", sans-serif;
   color: var(--VeryDarkBlue);
@@ -51,9 +55,9 @@ div.card span {
 div.card {
   border-radius: 10px;
   box-shadow: 4px 4px 14px #aaa;
-  height: 193px;
-  padding: 35px;
-  width: 226px;
+  height: 180px;
+  padding: 26px;
+  width: 282px;
   margin-bottom: 26px;
   position: relative;
 }
@@ -74,19 +78,26 @@ svg {
   right: 50px;
   bottom: 26px;
 }
-@media screen and (min-width: 700px) {
-  body {
-    max-width: 1440px;
+@media screen and (min-width: 580px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    outline: 3px dotted pink;
   }
+}
+
+@media screen and (min-width: 700px) {
   header {
     width: 500px;
     margin: 50px auto;
   }
-  .cards {
-    display: flex;
-    justify-content: center;
-    place-items: center;
-  }
+  // .cards {
+  //   display: flex;
+  //   justify-content: center;
+  //   place-items: center;
+  // }
   .card_group {
     padding: 25px;
   }
